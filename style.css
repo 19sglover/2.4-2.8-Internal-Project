@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     font-family: arial;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #af9dff;
 }
 
 header {
@@ -64,6 +69,7 @@ header ul li:hover a {
     flex-direction: column;
     justify-content: center;
     padding-left: 5vw;
+    margin-bottom: 20px;
     
 }
 
@@ -83,5 +89,81 @@ header ul li:hover a {
     color: white;
     border-radius: 10px;
     text-decoration: none;
-    underline all text: paowepo2ih4
+}
+
+.one {
+    width: 94.45%;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    margin: 0 auto;
+}
+
+.one .card-front, .one .card-back {
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.one .card-front {
+    background-color: #32226d;
+}
+
+.container:hover .one {
+    transform: rotateX(180deg);
+}
+
+.container {
+    background-color: #af9dff;
+}
+
+
+.one .card-back {
+    background-color: #32226d;
+    transform: rotateX(180deg);
+}
+
+.css-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 23vw);
+    grid-gap: 10px;
+    grid-template-rows: repeat(4, 30vh);
+    justify-content: center;
+    padding: 20px 0px;
+    background-color: #af9dff;
+}
+
+.item {
+    background-color: #32226d;
+}
+
+.a {
+    grid-column: span 2;
+}
+
+.b {
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.c {
+    grid-column: span 2;
+}
+
+.d {
+    grid-row: span 2;
+}
+
+
+.f {
+    grid-column: span 3;
+}
+
+.footer {
+    height: 500px;
+    background-color: #32226d;
+    color: white;
+    text-align: center;
 }
