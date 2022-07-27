@@ -156,14 +156,24 @@ header ul li:hover a {
     grid-row: span 2;
 }
 
-
 .f {
     grid-column: span 3;
 }
 
 .footer {
+    margin-top: 100px;
     height: 500px;
     background-color: #32226d;
     color: white;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.toe {
+    margin: 100px;
+}
+
+.toe li {
+    padding: 10px;
 }
