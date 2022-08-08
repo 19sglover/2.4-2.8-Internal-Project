@@ -6,11 +6,11 @@
 }
 
 body {
-    background-color: #af9dff;
+    background-color: #85b0f1;
 }
 
 header {
-    background-color: #32226d;
+    background-color: #22306d;
 }
 
 header {
@@ -27,18 +27,18 @@ header ul {
     list-style: none;
 }
 
-header ul li {
+header ul li a {
     padding: 27px 20px;
 }
 
-li a {
+header a {
     text-decoration: none;
     color: white;
 }
 
 #enrol-button a {
     background-color: white;
-    color: #32226d;
+    color: #22306d;
     padding: 15px;
     border-radius: 5px;
     margin-right: 10px;
@@ -49,14 +49,35 @@ li a {
 a img {
     width: 30px;
     margin-left: 10px;
+    margin-top: 3px;
 }
 
-header ul li:hover {
+header ul li a:hover {
     background-color: white;
 }
 
 header ul li:hover a {
-    color: #32226d;
+    color: #22306d;
+}
+
+@media only screen and (max-width: 706px) {
+    header {
+        display: block;
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 50px;
+    }
+    header ul {
+        display: block;
+        margin-bottom: 20px;
+    }
+    header ul li {
+        padding: 27px;
+    }
+    header ul li a {
+        width: 200px
+    }
+
 }
 
 .hero {
@@ -85,7 +106,7 @@ header ul li:hover a {
 .hero p a {
     padding: 20px;
     font-size: 30px;
-    background-color: #32226d;
+    background-color: #22306d;
     color: white;
     border-radius: 10px;
     text-decoration: none;
@@ -108,7 +129,7 @@ header ul li:hover a {
 }
 
 .one .card-front {
-    background-color: #32226d;
+    background-color: #22306d;
 }
 
 .container:hover .one {
@@ -116,12 +137,12 @@ header ul li:hover a {
 }
 
 .container {
-    background-color: #af9dff;
+    background-color: #85b0f1;
 }
 
 
 .one .card-back {
-    background-color: #32226d;
+    background-color: #22306d;
     transform: rotateX(180deg);
 }
 
@@ -132,11 +153,11 @@ header ul li:hover a {
     grid-template-rows: repeat(4, 30vh);
     justify-content: center;
     padding: 20px 0px;
-    background-color: #af9dff;
+    background-color: #85b0f1;
 }
 
 .item {
-    background-color: #32226d;
+    background-color: #22306d;
 }
 
 .a {
@@ -161,19 +182,84 @@ header ul li:hover a {
 }
 
 .footer {
-    margin-top: 100px;
-    height: 500px;
-    background-color: #32226d;
+    margin-top: 10px;
+    background-color: #22306d;
     color: white;
     justify-content: center;
     align-items: center;
+}
+
+.toe ul {
     display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
 }
 
 .toe {
-    margin: 100px;
+    padding: 50px;
+    text-align: center;
 }
 
 .toe li {
-    padding: 10px;
+    padding: 0px 50px;
+}
+
+.toe li a {
+    color: white;
+    text-decoration: none;
+}
+
+.toe li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.main {
+    display: flex;
+    font-size: 30px;
+    color: white;
+}
+
+
+
+.text-block {
+    width: 45%;
+    margin: 40px auto;
+    background-color: #22306d;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 706px) {
+    .main {
+        display: block;
+    }
+    .text-block {
+        width: 90%
+    }
+
+}
+#heading {
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    margin-top: 50px;
+}
+
+.banner {
+    background-image: url(images/treble-cleff.webp);
+    background-size: contain;
+    height: 100px;
+    
+}
+
+.toe2 img {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+
+.toe2 {
+    text-align: right;
+    vertical-align: bottom;
 }
