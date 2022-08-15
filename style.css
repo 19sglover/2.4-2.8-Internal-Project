@@ -113,8 +113,8 @@ header ul li:hover a {
 }
 
 .one {
-    width: 94.45%;
-    height: 400px;
+    width: 95vw;
+    height: 40vh;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 1s;
@@ -193,6 +193,7 @@ header ul li:hover a {
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
+    list-style: none;
 }
 
 .toe {
@@ -202,6 +203,7 @@ header ul li:hover a {
 
 .toe li {
     padding: 0px 50px;
+    margin-right: 20px;
 }
 
 .toe li a {
@@ -228,6 +230,10 @@ header ul li:hover a {
     background-color: #22306d;
     padding: 15px;
     border-radius: 10px;
+}
+
+.text-block ul {
+    margin-left: 70px;
 }
 
 @media only screen and (max-width: 706px) {
@@ -262,4 +268,54 @@ header ul li:hover a {
 .toe2 {
     text-align: right;
     vertical-align: bottom;
+}
+
+.filler-content {
+    height: 100vh;
+    width: 100vw;
+}
+
+#line {
+    border: solid white 2px;
+    width: 85%;
+    margin: 25px auto;
+    margin-bottom: 30px;
+}
+
+.inputbox {
+    background-color: #22306d;
+    border-radius: 5px;
+    margin: 100px 10%;
+    padding: 75px 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.inputbox form {
+    font-size: 40px;
+}
+
+.inputbox form input {
+    height: 40px;
+    font-size: 40px;
+}
+
+.inputbox form #sub {
+    height: 50px;
+    width: 150px;
+    background-color: white;
+    border-radius: 5px;
+    color: #22306d;
+}
+
+.inputbox h1 {
+    font-size: 90px;
+    text-align: center;
+}
+
+.card-front img {
+    height: 100%;
 }
