@@ -362,6 +362,10 @@ header ul li:hover a {
     vertical-align: middle;
 }
 
+.block1 {
+    margin-bottom: 60px;
+}
+
 .eqhire {
     margin: 20px;
     font-size: 20px;
