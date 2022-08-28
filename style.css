@@ -63,25 +63,7 @@ header ul li:hover a {
     color: #22306d;
 }
 
-@media only screen and (max-width: 706px) {
-    header {
-        display: block;
-        text-align: center;
-        padding-bottom: 20px;
-        font-size: 50px;
-    }
-    header ul {
-        display: block;
-        margin-bottom: 20px;
-    }
-    header ul li {
-        padding: 27px;
-    }
-    header ul li a {
-        width: 200px
-    }
 
-}
 
 .hero {
     background-image: url(images/hero-image.png);
@@ -116,12 +98,12 @@ header ul li:hover a {
 }
 
 .one {
-    width: 95vw;
-    height: 40vh;
+    width: 1030px;
+    height: 250px;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 1s;
-    margin: 0 auto;
+
 }
 
 .one .card-front, .one .card-back {
@@ -133,7 +115,15 @@ header ul li:hover a {
 
 .one .card-front {
     background-color: #22306d;
+    display: flex;
+    justify-content: center;
 }
+
+.card-front img {
+    height: 130%;
+    margin-top: -38px;
+}
+
 
 .container:hover .one {
     transform: rotateX(180deg);
@@ -147,13 +137,17 @@ header ul li:hover a {
 .one .card-back {
     background-color: #22306d;
     transform: rotateX(180deg);
+    font-size: 35px;
+    color: white;
+    padding: 30px;
+    text-align: center;
 }
 
 .css-grid {
     display: grid;
-    grid-template-columns: repeat(4, 23vw);
+    grid-template-columns: repeat(4, 250px);
     grid-gap: 10px;
-    grid-template-rows: repeat(4, 30vh);
+    grid-template-rows: repeat(4, 150px);
     justify-content: center;
     padding: 20px 0px;
     background-color: #85b0f1;
@@ -165,15 +159,35 @@ header ul li:hover a {
 
 .a {
     grid-column: span 2;
+    color: white;
+    font-size: 23px;
+    text-align: center;
+    padding: 10px;
 }
 
 .b {
     grid-column: span 2;
     grid-row: span 3;
+    display: flex;
+    
+}
+
+.b img {
+    width: 97%;
+    padding: 10px;
+    align-items: center;
 }
 
 .c {
     grid-column: span 2;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 30px;
+}
+
+.c a {
+    color: white;
 }
 
 .d {
@@ -182,6 +196,10 @@ header ul li:hover a {
 
 .f {
     grid-column: span 3;
+    color: white;
+    font-size: 21px;
+    padding: 20px;
+    text-align: center;
 }
 
 .footer {
@@ -337,9 +355,6 @@ header ul li:hover a {
     font-weight: 600;
 
 }
-.card-front img {
-    height: 100%;
-}
 
 .item.d img {
     height: 100%;
@@ -368,10 +383,71 @@ header ul li:hover a {
 
 .eqhire {
     margin: 20px;
-    font-size: 20px;
-    height: 60vh;
+    font-size: 25px;
+    padding: 20px;
 }
 
 .eqhire p {
     margin-bottom: 100px;
+    margin-top: 10px;
+}
+
+
+
+iframe {
+    border: #22306d solid 5px;
+    margin-top: 20px;
+}
+
+.block1 {
+    font-size: 20px;
+}
+
+.block2 {
+    font-size: 25px;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 706px) {
+    
+    header {
+        display: block;
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 50px;
+    }
+    header ul {
+        display: block;
+        margin-bottom: 20px;
+    }
+    header ul li {
+        padding: 27px;
+    }
+    header ul li a {
+        width: 200px
+    }
+    .css-grid {
+        grid-template-columns: 250px 250px;
+        grid-template-rows: repeat(8, 150px);
+    }
+    .f {
+        grid-column: span 2;
+    }
+    .one {
+        width: 510px;
+    }
+    .one img {
+        width: 100%;
+        height: fit-content;
+        margin: 0;
+        vertical-align: middle;
+    }
+    .toe li {
+        padding: 0px 10px;
+    }
 }
